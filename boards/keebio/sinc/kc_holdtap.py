@@ -1,6 +1,7 @@
 from kmk.modules.holdtap import HoldTap
 from kmk.keys import KC
 
+<<<<<<< master
 SPC_FN = KC.HT(KC.SPC, KC.MO(1))
 A = KC.HT(KC.A, KC.LGUI(KC.A))
 B = KC.HT(KC.B, KC.LGUI(KC.B))
@@ -30,6 +31,16 @@ Y = KC.HT(KC.Y, KC.LGUI(KC.Y))
 Z = KC.HT(KC.Z, KC.LGUI(KC.Z))
 
 
+=======
+
+#SPC_FN = KC.HT(KC.SPC, KC.MO(1))
+SPC_FN = KC.HT(KC.SPC, KC.MO(1))
+# LCTL = KC.HT(KC.SOMETHING, KC.LCTRL)	                     #   LCTRL if held kc if tapped
+# LSFT = KC.HT(KC.SOMETHING, KC.LSFT)	                     #   LSHIFT if held kc if tapped
+# LALT = KC.HT(KC.SOMETHING, KC.LALT)	                     #   LALT if held kc if tapped
+# LGUI = KC.HT(KC.SOMETHING, KC.LGUI)	                     #   LGUI if held kc if tapped
+# RCTL = KC.HT(KC.SOMETHING, KC.RCTRL)	                     #   RCTRL if held kc if tapped
+>>>>>>> Added Support for Keebio/Sinc Rev3
 # RSFT = KC.HT(KC.SOMETHING, KC.RSFT)	                     #   RSHIFT if held kc if tapped
 # RALT = KC.HT(KC.SOMETHING, KC.RALT)	                     #   RALT if held kc if tapped
 # RGUI = KC.HT(KC.SOMETHING, KC.RGUI)	                     #   RGUI if held kc if tapped

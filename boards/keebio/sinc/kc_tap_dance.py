@@ -1,6 +1,7 @@
 from kmk.keys import KC
 from kmk.handlers.sequences import send_string
 from kmk.modules.tapdance import TapDance
+<<<<<<< master
 from kmk.handlers.sequences import simple_key_sequence
 
 GGL_SEARCH = simple_key_sequence(
@@ -56,3 +57,17 @@ W = KC.TD(KC.W, KC.HT(KC.LSFT(KC.W), KC.LGUI(KC.W)), tap_time=70)
 X = KC.TD(KC.X, KC.HT(KC.LSFT(KC.X), KC.LGUI(KC.X)), tap_time=70)
 Y = KC.TD(KC.Y, KC.HT(KC.LSFT(KC.Y), KC.LGUI(KC.Y)), tap_time=70)
 Z = KC.TD(KC.Z, KC.HT(KC.LSFT(KC.Z), KC.LGUI(KC.Z)), KC.LGUI(KC.LCTL(KC.Q)), tap_time=70)
+=======
+
+EXAMPLE_TD = KC.TD(
+    # Tap once for "a"
+    KC.A,
+    # Tap twice for "b", or tap and hold for "left control"
+    KC.HT(KC.B, KC.LCTL),
+    # Tap three times to send a raw string via macro
+  
+)
+
+# make the default tap time really short for this tap dance:
+EXAMPLE_TD2 = KC.TD(KC.A, KC.B)
+>>>>>>> Added Support for Keebio/Sinc Rev3
