@@ -94,16 +94,18 @@ keyboard.modules.append(Layers())
 =======
 
 keyboard = KMKKeyboard()
+keyboard.debug_enabled = True
 
 keyboard.extensions.append(MediaKeys())
-
 keyboard.modules.append(Layers())
 keyboard.modules.append(HoldTap())
+<<<<<<< master
 >>>>>>> Added Support for Keebio/Sinc Rev3
 
+=======
+>>>>>>> Holdtap to replace LGUI+KC.__ABC__
 import kc_holdtap as HT
 
-keyboard.debug_enabled = True
 
 # Per side configuration is set based on the device label (end with L or R).
 # uncomment device_name line for the corresponding side on boot.py
@@ -121,7 +123,6 @@ enc_module.map = [((KC.VOLD, KC.VOLU, KC.MUTE),)]
 keyboard.modules.append(enc_module)
 
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
-
 keyboard.col_pins = (
     board.GP29,
             board.GP28,
@@ -166,6 +167,7 @@ keyboard.keymap = [
 <<<<<<< master
 <<<<<<< master
 <<<<<<< master
+<<<<<<< master
 =======
 >>>>>>> TapDance
         KC.F3, KC.F4, KC.TAB, TD.Q, TD.W, TD.E, TD.R, TD.T,                     TD.Y, TD.U, TD.I, TD.O, TD.P, KC.LBRC, KC.RBRC, KC.BSLS, KC.END,
@@ -180,13 +182,18 @@ keyboard.keymap = [
         KC.F9, KC.F10, KC.LCTL, KC.LALT, KC.LGUI, KC.LGUI, HT.SPC_FN,             KC.SPC, KC.RALT, KC.RCTL, KC.RGUI, KC.LEFT, KC.DOWN, KC.RGHT
 >>>>>>> Added Support for Keebio/Sinc Rev3
 =======
+=======
+>>>>>>> Holdtap to replace LGUI+KC.__ABC__
         KC.F3, KC.F4, KC.TAB, HT.Q, HT.W, HT.E, HT.R, HT.T,                     HT.Y, HT.U, HT.I, HT.O, HT.P, KC.LBRC, KC.RBRC, KC.BSLS, KC.END,
         KC.F5, KC.F6, KC.CAPS, HT.A, HT.S, HT.D, HT.F, HT.G,                    HT.H, HT.J, HT.K, HT.L, KC.SCLN, KC.QUOT, KC.ENT, KC.PGUP,
         KC.F7, KC.F8, KC.LSFT, HT.Z, HT.X, HT.C, HT.V, HT.B,                    HT.N, HT.M, KC.COMM, KC.DOT, KC.SLSH, KC.RSFT, KC.UP, KC.PGDN,
         KC.F9, KC.F10, KC.LCTL, KC.LALT, KC.LGUI, KC.LGUI, HT.SPC_FN,             HT.SPC_FN, KC.RALT, KC.RCTL, KC.RGUI, KC.LEFT, KC.DOWN, KC.RGHT
+<<<<<<< master
 >>>>>>> Holdtap to replace LGUI+KC.__ABC__
 =======
 >>>>>>> TapDance
+=======
+>>>>>>> Holdtap to replace LGUI+KC.__ABC__
     ],
 
     [
@@ -195,6 +202,7 @@ keyboard.keymap = [
         _____, _____, _____, _____, _____, _____, _____, _____,               _____, _____, _____, _____, _____, _____, _____, _____, _____,
         _____, _____, _____, _____, _____, _____, _____, _____,                      _____, _____, _____, _____, _____, _____, _____, _____,
         _____, _____, _____, _____, _____, _____, _____, _____,                      _____, _____, _____, _____, _____, _____, _____, _____,
+<<<<<<< master
 <<<<<<< master
 <<<<<<< master
 <<<<<<< master
@@ -227,6 +235,9 @@ keyboard.keymap = [
         _____, _____, _____, _____, _____, _____, _____, _____,                      _____, _____, _____, _____, _____, _____, _____, _____,
         _____, _____, _____, _____, _____, _____, _____,                                    _____, _____, _____, _____, _____, _____, _____
 >>>>>>> Added Support for Keebio/Sinc Rev3
+=======
+        _____, _____, _____, _____, _____, _____, KC.ENT,                                    KC.ENT, _____, _____, _____, _____, _____, _____
+>>>>>>> Holdtap to replace LGUI+KC.__ABC__
     ]
 ]
 
