@@ -11,6 +11,7 @@ from kmk.modules.layers import Layers
 from kmk.modules.holdtap import HoldTap
 <<<<<<< master
 <<<<<<< master
+<<<<<<< master
 from kmk.modules.tapdance import TapDance
 =======
 >>>>>>> Added Support for Keebio/Sinc Rev3
@@ -22,6 +23,9 @@ from kmk.modules.tapdance import TapDance
 =======
 from kmk.modules.holdtap import HoldTap
 >>>>>>> Added Support for Keebio/Sinc Rev3
+=======
+from kmk.modules.tapdance import TapDance
+>>>>>>> TapDance
 from storage import getmount
 from kmk.extensions.media_keys import MediaKeys
 from kmk.extensions.RGB import RGB, AnimationModes
@@ -29,6 +33,7 @@ from kmk.extensions.RGB import RGB, AnimationModes
 <<<<<<< master
 from kmk.modules.encoder import EncoderHandler
 
+<<<<<<< master
 <<<<<<< master
 <<<<<<< master
 
@@ -47,6 +52,10 @@ from kmk.modules.encoder import EncoderHandler
 import kc_seq as SQ
 import kc_tap_dance as TD
 >>>>>>> Added Support for Keebio/Sinc Rev3
+=======
+
+import kc_seq as SQ
+>>>>>>> TapDance
 
 _____ = KC.TRNS
 XXXXXXX = KC.NO
@@ -64,6 +73,7 @@ keyboard.extensions.append(MediaKeys())
 keyboard.modules.append(Layers())
 keyboard.modules.append(HoldTap())
 keyboard.modules.append(TapDance())
+<<<<<<< master
 
 import kc_holdtap as HT
 import kc_tap_dance as TD
@@ -105,7 +115,11 @@ keyboard.modules.append(HoldTap())
 =======
 >>>>>>> Holdtap to replace LGUI+KC.__ABC__
 import kc_holdtap as HT
+=======
+>>>>>>> TapDance
 
+import kc_holdtap as HT
+import kc_tap_dance as TD
 
 # Per side configuration is set based on the device label (end with L or R).
 # uncomment device_name line for the corresponding side on boot.py
@@ -168,12 +182,16 @@ keyboard.keymap = [
 <<<<<<< master
 <<<<<<< master
 <<<<<<< master
+<<<<<<< master
+=======
+>>>>>>> TapDance
 =======
 >>>>>>> TapDance
         KC.F3, KC.F4, KC.TAB, TD.Q, TD.W, TD.E, TD.R, TD.T,                     TD.Y, TD.U, TD.I, TD.O, TD.P, KC.LBRC, KC.RBRC, KC.BSLS, KC.END,
         KC.F5, KC.F6, KC.CAPS, TD.A, TD.S, TD.D, TD.F, TD.G,                    TD.H, TD.J, TD.K, TD.L, KC.SCLN, KC.QUOT, KC.ENT, KC.PGUP,
         KC.F7, KC.F8, KC.LSFT, TD.Z, TD.X, TD.C, TD.V, TD.B,                    TD.N, TD.M, KC.COMM, KC.DOT, KC.SLSH, KC.RSFT, KC.UP, KC.PGDN,
         TD.F9, TD.F10, KC.LCTL, KC.LALT, KC.LGUI, KC.LGUI, HT.SPC_FN,             HT.SPC_FN, KC.RALT, KC.RCTL, KC.RGUI, KC.LEFT, KC.DOWN, KC.RGHT
+<<<<<<< master
 <<<<<<< master
 =======
         KC.F3, KC.F4, KC.TAB, KC.Q, KC.W, KC.E, KC.R, KC.T,                     KC.Y, KC.U, KC.I, KC.O, KC.P, KC.LBRC, KC.RBRC, KC.BSLS, KC.END,
@@ -194,6 +212,8 @@ keyboard.keymap = [
 >>>>>>> TapDance
 =======
 >>>>>>> Holdtap to replace LGUI+KC.__ABC__
+=======
+>>>>>>> TapDance
     ],
 
     [
@@ -202,6 +222,7 @@ keyboard.keymap = [
         _____, _____, _____, _____, _____, _____, _____, _____,               _____, _____, _____, _____, _____, _____, _____, _____, _____,
         _____, _____, _____, _____, _____, _____, _____, _____,                      _____, _____, _____, _____, _____, _____, _____, _____,
         _____, _____, _____, _____, _____, _____, _____, _____,                      _____, _____, _____, _____, _____, _____, _____, _____,
+<<<<<<< master
 <<<<<<< master
 <<<<<<< master
 <<<<<<< master
@@ -238,9 +259,11 @@ keyboard.keymap = [
 =======
         _____, _____, _____, _____, _____, _____, KC.ENT,                                    KC.ENT, _____, _____, _____, _____, _____, _____
 >>>>>>> Holdtap to replace LGUI+KC.__ABC__
+=======
+        _____, _____, _____, _____, _____, KC.LED_TOG(), KC.ENT,                                    KC.ENT, _____, _____, _____, _____, _____, _____
+>>>>>>> TapDance
     ]
 ]
-
 
 
 keyboard.coord_mapping = [0,  2, 3, 4, 5, 6, 7, 8,                 91, 92, 93, 94, 95, 96, 97, 98,
@@ -260,6 +283,7 @@ keyboard.coord_mapping = [0,  2, 3, 4, 5, 6, 7, 8,                 91, 92, 93, 9
 =======
 =======
 
+<<<<<<< master
 >>>>>>> Added Support for Keebio/Sinc Rev3
 # rgb_ext = RGB(pixel_pin=board.NEOPIXEL,
 #               num_pixels=num_rgb_pixels)
@@ -276,6 +300,10 @@ keyboard.coord_mapping = [0,  2, 3, 4, 5, 6, 7, 8,                 91, 92, 93, 9
 keyboard.extensions = []
 >>>>>>> Keebio Sinc Rev3 - Preliminary Support
 =======
+=======
+#
+# rgb_ext = RGB(pixel_pin=board.NEOPIXEL, num_pixels=num_rgb_pixels)
+>>>>>>> TapDance
 # keyboard.extensions.append(rgb_ext)
 >>>>>>> Added Support for Keebio/Sinc Rev3
 
